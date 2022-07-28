@@ -1,0 +1,42 @@
+.Header {
+  display: flex;
+  width: 70%;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+.Header .logo {
+  width: 20%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-shadow: 2px 2px 2px lightgray;
+}
+
+.Header .logo .icon {
+  color: magenta;
+  margin-right: 5px;
+}
+
+.Header .logo .title {
+  font-weight: bold;
+  color: blue;
+}
+
+.Header .search {
+  width: 70%;
+}
+
+.Header .search input {
+  width: 85%;
+  border: 2px solid magenta;
+  font-size: 1.5rem;
+}
+
+.Header .search button {
+  background-color: blue;
+  color: magenta;
+  font-size: 1.5rem;
+}

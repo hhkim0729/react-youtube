@@ -1,0 +1,26 @@
+.VideoItem {
+  display: flex;
+  width: 40%;
+  border: 2px double magenta;
+  word-wrap: break-word;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  text-align: left;
+  box-shadow: inset 5px 5px 5px rgb(163, 255, 255),
+    inset -5px -5px 5px rgb(163, 255, 255);
+  cursor: pointer;
+  transition: box-shadow 0.5s ease;
+  align-items: center;
+}
+
+.VideoItem:hover {
+  box-shadow: inset 5px 5px 5px rgb(157, 157, 255),
+    inset -5px -5px 5px rgb(255, 109, 255);
+  transition: box-shadow 0.5s ease;
+}
+
+.VideoItem .info .title {
+  font-size: 1rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
