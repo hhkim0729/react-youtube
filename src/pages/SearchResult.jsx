@@ -13,11 +13,7 @@ export default function SearchResult() {
 
   const { data } = useQuery({
     queryKey: ['videos', query],
-    queryFn: async () =>
-      fetch(
-        `videos/search.json`
-        // `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${query}&key=AIzaSyDfnXB2YvH37X7K6NEkWVBiHIsPcCGHkvw`
-      ).then((res) => res.json()),
+    queryFn: async () => fetch(`videos/search.json`).then((res) => res.json()),
     staleTime: 1000 * 60 * 5,
   });
 
