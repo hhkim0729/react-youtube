@@ -1,0 +1,862 @@
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "qcuKeHmhzVOVu9dXg2UVj9CHaF0",
+  "nextPageToken": "CBkQAA",
+  "regionCode": "KR",
+  "pageInfo": {
+    "totalResults": 1000000,
+    "resultsPerPage": 25
+  },
+  "items": [
+    {
+      "kind": "youtube#searchResult",
+      "etag": "N3LZHMOV9n0-PV7BVpF1LgM-MG0",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "Way9Dexny3w"
+      },
+      "snippet": {
+        "publishedAt": "2023-05-03T15:59:10Z",
+        "channelId": "UCjmJDM5pRKbUlVIzDYYWb6g",
+        "title": "Dune: Part Two | Official Trailer",
+        "description": "Long Live the Fighters. #DunePartTwo only in theaters November 3. ----------------- https://www.instagram.com/dunemovie/ ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Way9Dexny3w/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Way9Dexny3w/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Way9Dexny3w/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Warner Bros. Pictures",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-05-03T15:59:10Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "PTn7USRuBSfRIlWygk3JoqSUW8M",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "8g18jFHCLXk"
+      },
+      "snippet": {
+        "publishedAt": "2021-07-22T13:00:04Z",
+        "channelId": "UCjmJDM5pRKbUlVIzDYYWb6g",
+        "title": "Dune | Official Main Trailer",
+        "description": "IT'S TIME. #DuneMovie coming October 22. ----------------- https://www.instagram.com/dunemovie/ https://www.facebook.com/dune ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/8g18jFHCLXk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/8g18jFHCLXk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/8g18jFHCLXk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Warner Bros. Pictures",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-07-22T13:00:04Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "baiNY20VluTMX2DWWQArE4QkFfA",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "sGHeEM58Bjo"
+      },
+      "snippet": {
+        "publishedAt": "2023-06-16T04:00:33Z",
+        "channelId": "UCmWwbZ-8SngcUzRAD8rCVvw",
+        "title": "Dune",
+        "description": "Provided to YouTube by Genie Music Corporation Dune · ATEEZ THE WORLD EP.2 : OUTLAW ℗ 2023 KQ ENTERTAINMENT ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/sGHeEM58Bjo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/sGHeEM58Bjo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/sGHeEM58Bjo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "ATEEZ - Topic",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-06-16T04:00:33Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "W-t0wUFsIkN3DQ3FVoy4dGqjmm0",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "n9xhJrPXop4"
+      },
+      "snippet": {
+        "publishedAt": "2020-09-09T16:18:02Z",
+        "channelId": "UCjmJDM5pRKbUlVIzDYYWb6g",
+        "title": "Dune Official Trailer",
+        "description": "Beyond fear, destiny awaits. Watch the trailer for the highly anticipated #DuneMovie now.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/n9xhJrPXop4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/n9xhJrPXop4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/n9xhJrPXop4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Warner Bros. Pictures",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-09-09T16:18:02Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "ExrkxV9O2hKopiBY92sltXrrS0A",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "1_TuEO6Mttw"
+      },
+      "snippet": {
+        "publishedAt": "2022-03-24T14:59:50Z",
+        "channelId": "UCgKkNPU2Ib7_TcyAl8M2S-w",
+        "title": "Dune | The Emperor Has Spoken | Warner Bros. Entertainment",
+        "description": "House Atreides is ordered to take control of Arrakis by the Emperor. Leto Atreides (Oscar Isaac) seals their fate with his signet ring.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/1_TuEO6Mttw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/1_TuEO6Mttw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/1_TuEO6Mttw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Warner Bros. Entertainment",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-03-24T14:59:50Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "S_7aJqmFpa8ByUsPdBG2U-GoaDY",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "_j5GgGdSwjE"
+      },
+      "snippet": {
+        "publishedAt": "2022-03-19T15:34:49Z",
+        "channelId": "UCjmJDM5pRKbUlVIzDYYWb6g",
+        "title": "Hans Zimmer Performs the Dune Soundtrack LIVE",
+        "description": "WATCH AS HANS ZIMMER AND A TALENTED GROUP OF ARTISTS BRING THE MUSICAL SOUNDS OF ARRAKIS TO LIFE IN ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/_j5GgGdSwjE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/_j5GgGdSwjE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/_j5GgGdSwjE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Warner Bros. Pictures",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-03-19T15:34:49Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "qrJ5ASG8r3wJlGYJX3PkUdVzFEg",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "2SkLBP0QtSQ"
+      },
+      "snippet": {
+        "publishedAt": "2022-05-03T18:25:20Z",
+        "channelId": "UCxSgL4wUSWEqNkKUB5x6CeA",
+        "title": "Sardaukar : The Emperor&#39;s Blades : Dune 2021",
+        "description": "\"We are the Sardaukar. The Emperor's blades. Those who stand against us fall\"",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/2SkLBP0QtSQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/2SkLBP0QtSQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/2SkLBP0QtSQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "RAZR",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-05-03T18:25:20Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "N_sBcVLw2ZYIae2e3nRkn7fPaKg",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "R0krUthYxF4"
+      },
+      "snippet": {
+        "publishedAt": "2022-05-22T14:58:58Z",
+        "channelId": "UCveZqqGewoyPiacooywP5Ig",
+        "title": "The real Dune",
+        "description": "What is the real story of Dune in the original book, compared to the 2021 Dune movie? Dune Sequels Explained: ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/R0krUthYxF4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/R0krUthYxF4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/R0krUthYxF4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Alt Shift X",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-05-22T14:58:58Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "jyBLwl_k6jLEEZMFuWtIpLxAVfM",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "-KAgrItNbvQ"
+      },
+      "snippet": {
+        "publishedAt": "2023-06-17T09:00:48Z",
+        "channelId": "UCxGoreKfZxDBxJzirLWuOuw",
+        "title": "LIVE: Make Dune in Unreal Engine 5 Part 2 (Process Livestream)",
+        "description": "This is a process livestream where I am going to build a shot from the 2021 Movie Dune using Unreal Engine 5 and other tools.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/-KAgrItNbvQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/-KAgrItNbvQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/-KAgrItNbvQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Aziel Arts",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-06-17T09:00:48Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "ophIl36ge4Yy-dS8FPtF_v4s8Bo",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "uTmBeR32GRA"
+      },
+      "snippet": {
+        "publishedAt": "2021-09-17T03:59:17Z",
+        "channelId": "UCGkQCAeRjyP9BpNwVFMaJaw",
+        "title": "DUNE Official Soundtrack | Full Album - Hans Zimmer | WaterTower",
+        "description": "DUNE Official Soundtrack by: Hans Zimmer Avail now: https://lnk.to/duneID Subscribe to WaterTower Music on YouTube: ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/uTmBeR32GRA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/uTmBeR32GRA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/uTmBeR32GRA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "WaterTower Music",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-09-17T03:59:17Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "mEDMzrYb0IKRLzDi2h4n-eeFAP8",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "yhYU4ZbLmmk"
+      },
+      "snippet": {
+        "publishedAt": "2019-12-17T16:00:08Z",
+        "channelId": "UCsooa4yRKGN_zEE8iknghZA",
+        "title": "Why should you read “Dune” by Frank Herbert? - Dan Kwartler",
+        "description": "Discover Frank Herbert's science fiction classic, “Dune,” which tells the story of a man catapulted into the middle of a planetary ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/yhYU4ZbLmmk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/yhYU4ZbLmmk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/yhYU4ZbLmmk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "TED-Ed",
+        "liveBroadcastContent": "none",
+        "publishTime": "2019-12-17T16:00:08Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "xglNBoAprUrWcrNTTwbzbU_zvls",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "xkOZzkDqWfA"
+      },
+      "snippet": {
+        "publishedAt": "2023-06-16T06:19:03Z",
+        "channelId": "UC02dz9EGZsa7Scx2VSgqiWQ",
+        "title": "ATEEZ - &#39;DUNE&#39; (에이티즈 DUNE 가사) (Color Coded Lyrics (Lyrics (Han/Rom/Eng/가사)",
+        "description": "All Rights Administered by KQ Entertainment Provided to YouTube by KQ Entertainment .",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/xkOZzkDqWfA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/xkOZzkDqWfA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/xkOZzkDqWfA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Hee-young",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-06-16T06:19:03Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "ZQbRAc4VA0GjDfU-J52DSy3N-kY",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "BdtiYwSP9ko"
+      },
+      "snippet": {
+        "publishedAt": "2021-07-23T03:59:11Z",
+        "channelId": "UCGkQCAeRjyP9BpNwVFMaJaw",
+        "title": "Dune Official Soundtrack | Paul&#39;s Dream – Hans Zimmer | WaterTower",
+        "description": "Paul's Dream, a new song from the #OfficialSoundtrack of Dune by: Hans Zimmer Avail now: https://lnk.to/PaulsDreamID ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/BdtiYwSP9ko/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/BdtiYwSP9ko/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/BdtiYwSP9ko/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "WaterTower Music",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-07-23T03:59:11Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "PS8MIMIE5ppF3-t-Aot5znaOfJ8",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "uk_q64puY2Q"
+      },
+      "snippet": {
+        "publishedAt": "2022-01-15T00:19:13Z",
+        "channelId": "UCe89nw_JBPZdMFrJUYbTSJQ",
+        "title": "Dune: Part One (2021) - Baron and the Reverend Mother discuss the demise of House Atreides",
+        "description": "\"My Desert. My Arrakis. My Dune.\" Scene with Baron Harkonnen and Reverend Mother Gaius Helen Mohiam DISCLAIMER: Video ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/uk_q64puY2Q/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/uk_q64puY2Q/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/uk_q64puY2Q/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Benatos",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-01-15T00:19:13Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "J3bL7PEi2sjdGBwW4F-O0PT9-bs",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "KU_fP9494QE"
+      },
+      "snippet": {
+        "publishedAt": "2021-10-23T15:35:42Z",
+        "channelId": "UCS5C4dC1Vc3EzgeDO-Wu3Mg",
+        "title": "BEST &amp; WORST Differences Between DUNE 2021 &amp; Dune 1984",
+        "description": "The spiciest differences between Villeneuve's 2021 Dune masterpiece & Lynch's 1984 cult movie Dune, details you missed, ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/KU_fP9494QE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/KU_fP9494QE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/KU_fP9494QE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Flicks And The City",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-10-23T15:35:42Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "2M0h5-lfK5318hGVLGjRRlVzjLE",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "l9fvEDpub8M"
+      },
+      "snippet": {
+        "publishedAt": "2022-01-11T19:00:27Z",
+        "channelId": "UCgKkNPU2Ib7_TcyAl8M2S-w",
+        "title": "Dune | Silence | Warner Bros. Entertainment",
+        "description": "SUBSCRIBE to Warner Bros. Entertainment: http://bit.ly/32v18jf Connect with Warner Bros. Entertainment Online: Follow Warner ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/l9fvEDpub8M/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/l9fvEDpub8M/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/l9fvEDpub8M/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Warner Bros. Entertainment",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-01-11T19:00:27Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "vwqiv5uSh5CpIb5kpl-Ng_fhQhE",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "mTaqUyfV19A"
+      },
+      "snippet": {
+        "publishedAt": "2021-11-07T13:43:58Z",
+        "channelId": "UCZBs4AE2MYlpQHIxk6ErkiQ",
+        "title": "Paul Atreides (Suite) | Dune (Soundtrack) by Hans Zimmer",
+        "description": "Blessed by a majestic performance, Timothée Chalamet portrayal of Paul Atreides in \"Dune\" was intense, convincing and ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/mTaqUyfV19A/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/mTaqUyfV19A/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/mTaqUyfV19A/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Tim S. Lucas",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-11-07T13:43:58Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "_ettn7QEihKV2bK5bDu2yBFj72Y",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "tCylH-WzqrU"
+      },
+      "snippet": {
+        "publishedAt": "2022-01-14T23:45:59Z",
+        "channelId": "UCe89nw_JBPZdMFrJUYbTSJQ",
+        "title": "Dune: Part One (2021) - Baron Harkonnen Bath Scene [HD]",
+        "description": "Baron Vladimir Harkonnen instructs Rabban while taking a healing bath DISCLAIMER: Video falls under fair use, no copyright ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/tCylH-WzqrU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/tCylH-WzqrU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/tCylH-WzqrU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Benatos",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-01-14T23:45:59Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Xc0FD4w6imgG2nnkCPNVGQvw2as",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "4CPttd1cyUw"
+      },
+      "snippet": {
+        "publishedAt": "2023-06-14T05:58:56Z",
+        "channelId": "UCveZqqGewoyPiacooywP5Ig",
+        "title": "Dune Part Two Trailer Explained (no spoilers)",
+        "description": "Get Nebula using my link for 40% off an annual subscription: https://go.nebula.tv/altshiftx Tale Foundry's Dune genre video: ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/4CPttd1cyUw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/4CPttd1cyUw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/4CPttd1cyUw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Alt Shift X",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-06-14T05:58:56Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "IipSxvQVfYfMq7f7GZcXmVKmh6g",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "Cli2PU03u3A"
+      },
+      "snippet": {
+        "publishedAt": "2021-10-24T01:16:35Z",
+        "channelId": "UC1rFmaGLYr0Ve_Y_soxZNWQ",
+        "title": "The Politics of Dune Explained In FIVE Minutes",
+        "description": "Explaining the politics of DUNE! Who is the emperor? What is the Landsraad? Music: https://youtu.be/GoXTn2seD_U FOLLOW ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Cli2PU03u3A/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Cli2PU03u3A/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Cli2PU03u3A/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Quinn's Ideas",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-10-24T01:16:35Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "1GW59ZibiulFFdz42ryCnMUKqdA",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "hShxsAlJmfw"
+      },
+      "snippet": {
+        "publishedAt": "2022-01-26T00:00:10Z",
+        "channelId": "UCfR8HhkbpDAwvYxrecNg4Mg",
+        "title": "Dune | Epic Music &amp; Ambience",
+        "description": "I must not fear. Fear is the mind-killer. Fear is the little-death that brings total obliteration.\" Enjoy the mythic and emotional musical ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/hShxsAlJmfw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/hShxsAlJmfw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/hShxsAlJmfw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Ambient Worlds",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-01-26T00:00:10Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "OndFnzRwdxtDKJYJLhajWiT0gO4",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "nWY3mRWCzdw"
+      },
+      "snippet": {
+        "publishedAt": "2022-01-27T21:52:03Z",
+        "channelId": "UCmvw85F2N6Hb1EOvkismODQ",
+        "title": "Dune 4K HDR | The Spice Harvester Scene 1/2",
+        "description": "Dune #HDR #DolbyVision Dune 4K HDR | The Spice Harvester Scene 1/2 - 2160p 10bit HDR Dolby Vision 7.1 Atmos Dune tells ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/nWY3mRWCzdw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/nWY3mRWCzdw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/nWY3mRWCzdw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Apex Clips",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-01-27T21:52:03Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "hJARYENvERxCeNjB8xOLpzPuEaE",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "hJ658qV-xAg"
+      },
+      "snippet": {
+        "publishedAt": "2022-07-01T05:56:06Z",
+        "channelId": "UCveZqqGewoyPiacooywP5Ig",
+        "title": "Dune Sequels Explained",
+        "description": "What happens in the sequels to Dune? A quick summary of all six Dune books by Frank Herbert: Dune, Dune Messiah, Children ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/hJ658qV-xAg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/hJ658qV-xAg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/hJ658qV-xAg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Alt Shift X",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-07-01T05:56:06Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "8pHzru889Cl-csMNwgHdAU3fbgo",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "U_XmCLi8nB8"
+      },
+      "snippet": {
+        "publishedAt": "2022-07-06T14:00:14Z",
+        "channelId": "UCBbgYnw252xw8sJ4sK2rJgQ",
+        "title": "Paul Fights For His Life and His Mother | There is no yield, only death | DUNE 2021",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/U_XmCLi8nB8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/U_XmCLi8nB8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/U_XmCLi8nB8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Movie Dog",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-07-06T14:00:14Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "ttwNEzLCK4pnQAuzwIjdn5l4YK4",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "flzahpG6U0k"
+      },
+      "snippet": {
+        "publishedAt": "2023-06-11T22:01:58Z",
+        "channelId": "UCgaPRP68bbyHnfkPhWWBrNw",
+        "title": "Dune: Awakening Exclusive Interview and Gameplay Footage | PC Gaming Show 2023",
+        "description": "How do you make Dune into a massively-multiplayer game? Speaking with members of the team behind the project at Funcom in ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/flzahpG6U0k/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/flzahpG6U0k/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/flzahpG6U0k/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PC Gamer",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-06-11T22:01:58Z"
+      }
+    }
+  ]
+}
