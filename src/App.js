@@ -3,6 +3,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import Root from 'pages/Root';
 import Main from 'pages/Main';
 import SearchResult from 'pages/SearchResult';
+import Detail from 'pages/Detail';
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: 'results',
         element: <SearchResult />,
+      },
+      {
+        path: 'watch/:videoId',
+        element: <Detail />,
       },
     ],
   },
