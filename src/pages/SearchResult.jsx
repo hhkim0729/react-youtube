@@ -13,7 +13,7 @@ export default function SearchResult() {
 
   const { data } = useQuery({
     queryKey: ['videos', query],
-    queryFn: async () => fetch(`videos/search.json`).then((res) => res.json()),
+    queryFn: async () => fetch(`data/search.json`).then((res) => res.json()),
     staleTime: 1000 * 60 * 5,
   });
 
