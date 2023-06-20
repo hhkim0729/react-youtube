@@ -37,6 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-dom", "npm:18.2.4"],\
             ["@types/testing-library__jest-dom", "npm:5.14.5"],\
             ["eslint-config-react-app", "virtual:cd048ccc44762d22b7ada27615e5dfd59ebe0c09c82162238bd80229b36abc499589dc51f321b53ab96235ffa5959e6b83b599fef0ca7f6ea3abbb187a28048e#npm:7.0.1"],\
+            ["html-entities", "npm:2.3.6"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:cd048ccc44762d22b7ada27615e5dfd59ebe0c09c82162238bd80229b36abc499589dc51f321b53ab96235ffa5959e6b83b599fef0ca7f6ea3abbb187a28048e#npm:18.2.0"],\
             ["react-router-dom", "virtual:cd048ccc44762d22b7ada27615e5dfd59ebe0c09c82162238bd80229b36abc499589dc51f321b53ab96235ffa5959e6b83b599fef0ca7f6ea3abbb187a28048e#npm:6.11.2"],\
@@ -9559,6 +9560,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["html-entities", "npm:2.3.3"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:2.3.6", {\
+          "packageLocation": "./.yarn/cache/html-entities-npm-2.3.6-a45c21cb36-559a88dc3a.zip/node_modules/html-entities/",\
+          "packageDependencies": [\
+            ["html-entities", "npm:2.3.6"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["html-escaper", [\
@@ -14908,6 +14916,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-dom", "npm:18.2.4"],\
             ["@types/testing-library__jest-dom", "npm:5.14.5"],\
             ["eslint-config-react-app", "virtual:cd048ccc44762d22b7ada27615e5dfd59ebe0c09c82162238bd80229b36abc499589dc51f321b53ab96235ffa5959e6b83b599fef0ca7f6ea3abbb187a28048e#npm:7.0.1"],\
+            ["html-entities", "npm:2.3.6"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:cd048ccc44762d22b7ada27615e5dfd59ebe0c09c82162238bd80229b36abc499589dc51f321b53ab96235ffa5959e6b83b599fef0ca7f6ea3abbb187a28048e#npm:18.2.0"],\
             ["react-router-dom", "virtual:cd048ccc44762d22b7ada27615e5dfd59ebe0c09c82162238bd80229b36abc499589dc51f321b53ab96235ffa5959e6b83b599fef0ca7f6ea3abbb187a28048e#npm:6.11.2"],\
