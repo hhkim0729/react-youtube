@@ -56,7 +56,10 @@ export default function Detail() {
           <h1>{videoSnippet && videoSnippet.title}</h1>
           {channel && (
             <div>
-              <img src={channelSnippet.thumbnails.default.url} />
+              <img
+                src={channelSnippet.thumbnails.default.url}
+                alt={`${channelSnippet.title} thumbnail`}
+              />
               <div>
                 <h2>{channelSnippet.title}</h2>
                 <span>구독자 {channelStatistics.subscriberCount}명</span>
@@ -74,7 +77,10 @@ export default function Detail() {
               const comment = snippet.topLevelComment;
               return (
                 <li key={id}>
-                  <img src={comment.snippet.authorProfileImageUrl} />
+                  <img
+                    src={comment.snippet.authorProfileImageUrl}
+                    alt={`${comment.snippet.authorDisplayName} profile`}
+                  />
                   <div>
                     <div>
                       <span>{comment.snippet.authorDisplayName}</span>
@@ -97,7 +103,10 @@ export default function Detail() {
               return (
                 <li key={videoId}>
                   <Link to={`/watch/${videoId}`} state={{ video }}>
-                    <img src={snippet.thumbnails.medium.url} />
+                    <img
+                      src={snippet.thumbnails.medium.url}
+                      alt={`${snippet.title} thumbnail`}
+                    />
                     <div>
                       <h3>{snippet.title}</h3>
                       <span>{snippet.channelTitle}</span>
