@@ -12,7 +12,7 @@ export default function VideoList({ videos }) {
               <img src={snippet.thumbnails.medium.url} alt={snippet.title} />
             </Link>
             <div>
-              <Link to={`/watch/${videoId}`} sstate={{ video }}>
+              <Link to={`/watch/${videoId}`} state={{ video }}>
                 <h3>{snippet.title}</h3>
               </Link>
               <div>
