@@ -28,6 +28,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@heroicons/react", "virtual:cd048ccc44762d22b7ada27615e5dfd59ebe0c09c82162238bd80229b36abc499589dc51f321b53ab96235ffa5959e6b83b599fef0ca7f6ea3abbb187a28048e#npm:2.0.18"],\
             ["@tanstack/eslint-plugin-query", "npm:4.29.8"],\
             ["@tanstack/react-query", "virtual:cd048ccc44762d22b7ada27615e5dfd59ebe0c09c82162238bd80229b36abc499589dc51f321b53ab96235ffa5959e6b83b599fef0ca7f6ea3abbb187a28048e#npm:4.29.7"],\
             ["@testing-library/jest-dom", "npm:5.16.5"],\
@@ -3292,6 +3293,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@gar-promisify-npm-1.1.3-ac1a325862-4059f790e2.zip/node_modules/@gar/promisify/",\
           "packageDependencies": [\
             ["@gar/promisify", "npm:1.1.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@heroicons/react", [\
+        ["npm:2.0.18", {\
+          "packageLocation": "./.yarn/cache/@heroicons-react-npm-2.0.18-3febb62534-597e866881.zip/node_modules/@heroicons/react/",\
+          "packageDependencies": [\
+            ["@heroicons/react", "npm:2.0.18"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:cd048ccc44762d22b7ada27615e5dfd59ebe0c09c82162238bd80229b36abc499589dc51f321b53ab96235ffa5959e6b83b599fef0ca7f6ea3abbb187a28048e#npm:2.0.18", {\
+          "packageLocation": "./.yarn/__virtual__/@heroicons-react-virtual-153835def0/0/cache/@heroicons-react-npm-2.0.18-3febb62534-597e866881.zip/node_modules/@heroicons/react/",\
+          "packageDependencies": [\
+            ["@heroicons/react", "virtual:cd048ccc44762d22b7ada27615e5dfd59ebe0c09c82162238bd80229b36abc499589dc51f321b53ab96235ffa5959e6b83b599fef0ca7f6ea3abbb187a28048e#npm:2.0.18"],\
+            ["@types/react", "npm:18.2.6"],\
+            ["react", "npm:18.2.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -14908,6 +14931,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         ["workspace:.", {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@heroicons/react", "virtual:cd048ccc44762d22b7ada27615e5dfd59ebe0c09c82162238bd80229b36abc499589dc51f321b53ab96235ffa5959e6b83b599fef0ca7f6ea3abbb187a28048e#npm:2.0.18"],\
             ["@tanstack/eslint-plugin-query", "npm:4.29.8"],\
             ["@tanstack/react-query", "virtual:cd048ccc44762d22b7ada27615e5dfd59ebe0c09c82162238bd80229b36abc499589dc51f321b53ab96235ffa5959e6b83b599fef0ca7f6ea3abbb187a28048e#npm:4.29.7"],\
             ["@testing-library/jest-dom", "npm:5.16.5"],\
