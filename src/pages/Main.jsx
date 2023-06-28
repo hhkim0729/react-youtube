@@ -10,7 +10,7 @@ export default function Main() {
   const videos = data?.items ?? [];
 
   return (
-    <section>
+    <section className="py-4">
       <VideoList videos={videos} />
     </section>
   );
