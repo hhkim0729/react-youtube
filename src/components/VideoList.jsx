@@ -12,7 +12,7 @@ export default function VideoList({ videos }) {
 }
 
 function VideoItem({ video }) {
-  const { id, snippet, statistics } = video;
+  const { id, snippet } = video;
   const videoId = id.videoId ? id.videoId : id;
   return (
     <li key={videoId} className={`max-w-[320px] min-w-[200px] pb-2`}>
@@ -29,17 +29,9 @@ function VideoItem({ video }) {
             {truncate(snippet.title, 63)}
           </h3>
         </Link>
-        <div className="text-sm text-gray-600 mt-1">
+        <div className="flex flex-col text-sm text-gray-600 mt-1">
           <span>{snippet.channelTitle}</span>
-          <div>
-            {statistics && (
-              <>
-                <span>조회수 {statistics.viewCount} </span>
-                <span>·</span>
-              </>
-            )}
-            <span> {formatDate(snippet.publishedAt)}</span>
-          </div>
+          <span>{formatDate(snippet.publishedAt)}</span>
         </div>
       </div>
     </li>
