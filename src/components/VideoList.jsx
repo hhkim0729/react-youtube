@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { truncate } from 'utils';
+import { formatDate, truncate } from 'utils';
 
 export default function VideoList({ videos }) {
   return (
@@ -38,7 +38,7 @@ function VideoItem({ video }) {
                 <span>·</span>
               </>
             )}
-            <span> {snippet.publishedAt}</span>
+            <span> {formatDate(snippet.publishedAt)}</span>
           </div>
         </div>
       </div>
