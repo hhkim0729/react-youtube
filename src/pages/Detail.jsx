@@ -50,6 +50,8 @@ export default function Detail() {
     if (isDescriptionMore) {
       setDescription(truncate(videoSnippet.description, 30));
       setIsDescriptionMore(false);
+      const titleRect = titleRef.current.getBoundingClientRect();
+      if (titleRect.top > 0) return;
       titleRef.current.scrollIntoView({
         behavior: 'smooth',
       });
