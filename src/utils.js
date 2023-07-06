@@ -26,3 +26,25 @@ export function formatDate(str) {
     return `${diffYear}년 전`;
   }
 }
+
+export function formatNumber(num) {
+  let formatted = num;
+  if (num < 1000) {
+    return num;
+  } else if (num < 10000) {
+    formatted = num / 1000;
+    return `${
+      Number.isInteger(formatted) ? formatted : formatted.toFixed(1)
+    }천`;
+  } else if (num < 100000000) {
+    formatted = num / 10000;
+    return `${
+      Number.isInteger(formatted) ? formatted : formatted.toFixed(1)
+    }만`;
+  } else {
+    formatted = num / 100000000;
+    return `${
+      Number.isInteger(formatted) ? formatted : formatted.toFixed(1)
+    }억`;
+  }
+}
