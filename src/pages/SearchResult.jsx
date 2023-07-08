@@ -1,6 +1,7 @@
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import VideoList from 'components/VideoList';
+import { API_URLS } from 'consts';
 
 export default function SearchResult() {
   const navigate = useNavigate();
@@ -13,7 +14,8 @@ export default function SearchResult() {
 
   const { data } = useQuery({
     queryKey: ['videos', query],
-    queryFn: async () => fetch(`data/search.json`).then((res) => res.json()),
+    queryFn: async () =>
+      fetch(`${API_URLS.SEARCH}&q=${query}`).then((res) => res.json()),
     staleTime: 1000 * 60 * 5,
   });
 

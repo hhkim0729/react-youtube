@@ -4,6 +4,7 @@ import { useQuery } from '@tanstack/react-query';
 import { decode } from 'html-entities';
 import YouTube from 'react-youtube';
 import { formatDate, formatNumber, truncate } from 'utils';
+import { API_URLS } from 'consts';
 
 export default function Detail() {
   const { state } = useLocation();
@@ -21,7 +22,7 @@ export default function Detail() {
   const { data: channel } = useQuery({
     queryKey: ['channel', videoSnippet.channelId],
     queryFn: async () =>
-      fetch(`${process.env.PUBLIC_URL}/data/channel.json`).then((res) =>
+      fetch(`${API_URLS.CHANNEL}&id=${videoSnippet.channelId}`).then((res) =>
         res.json()
       ),
   });
@@ -33,7 +34,7 @@ export default function Detail() {
   const { data: comments } = useQuery({
     queryKey: ['comments', videoId],
     queryFn: async () =>
-      fetch(`${process.env.PUBLIC_URL}/data/comments.json`).then((res) =>
+      fetch(`${API_URLS.COMMENTS}&videoId=${videoId}`).then((res) =>
         res.json()
       ),
   });
@@ -41,7 +42,7 @@ export default function Detail() {
   const { data: relatedVideos } = useQuery({
     queryKey: ['relatedVideos', videoId],
     queryFn: async () =>
-      fetch(`${process.env.PUBLIC_URL}/data/related.json`).then((res) =>
+      fetch(`${API_URLS.RELATED}&relatedToVideoId=${videoId}`).then((res) =>
         res.json()
       ),
   });
