@@ -72,7 +72,7 @@ export default function Detail() {
                 origin: 'http://localhost:3000',
               },
             }}
-            iframeClassName="w-full h-[32vw]"
+            iframeClassName="w-full min-h-[20rem] lg:h-[32vw] lg:max-h-[45rem]"
           />
         </div>
         <div>
@@ -155,7 +155,7 @@ export default function Detail() {
           </div>
         )}
       </div>
-      <div className="lg:w-[100rem]">
+      <div className="lg:min-w-[24rem]">
         {relatedVideos && (
           <ul>
             {relatedVideos.items.map((video) => {

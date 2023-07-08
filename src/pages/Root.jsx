@@ -5,7 +5,7 @@ import SearchInput from 'components/SearchInput';
 export default function Root() {
   return (
     <div className="container m-auto">
-      <header className="flex justify-center items-center gap-3 p-4">
+      <header className="flex justify-center items-center gap-3 pt-4">
         <div className="flex items-center">
           <PlayCircleIcon className="inline-block w-10 text-rose-400" />
           <Link
@@ -17,7 +17,9 @@ export default function Root() {
         </div>
         <SearchInput />
       </header>
-      <Outlet />
+      <section className="p-4">
+        <Outlet />
+      </section>
     </div>
   );
 }
