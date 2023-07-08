@@ -123,40 +123,9 @@ export default function Detail() {
             </p>
           </div>
         </div>
-        {comments?.items && (
-          <div>
-            <h2 className="my-4">댓글 {comments.items.length}개</h2>
-            <ul>
-              {comments.items.map(({ id, snippet }) => {
-                const comment = snippet.topLevelComment;
-                return (
-                  <li key={id} className="flex items-center mb-6 gap-4">
-                    <img
-                      src={comment.snippet.authorProfileImageUrl}
-                      alt={`${comment.snippet.authorDisplayName} profile`}
-                      className="w-12 h-12 rounded-full"
-                    />
-                    <div>
-                      <div>
-                        <span className="text-sm font-semibold inline-block mr-1">
-                          {comment.snippet.authorDisplayName}
-                        </span>
-                        <span className="text-xs text-gray-500">
-                          {formatDate(comment.snippet.publishedAt)}
-                        </span>
-                      </div>
-                      <p className="leading-5">
-                        {decode(comment.snippet.textDisplay)}
-                      </p>
-                    </div>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        )}
+        {comments?.items && <CommentList comments={comments.items} />}
       </div>
-      <div className="lg:min-w-[24rem]">
+      <div className="lg:min-w-[24rem] lg:max-w-[24rem]">
         {relatedVideos && (
           <ul>
             {relatedVideos.items.map((video) => {
@@ -196,5 +165,68 @@ export default function Detail() {
         )}
       </div>
     </div>
+  );
+}
+
+function CommentList({ comments }) {
+  return (
+    <div>
+      <h2 className="my-4">댓글 {comments.length}개</h2>
+      <ul>
+        {comments.map(({ id, snippet }) => (
+          <CommentItem key={id} comment={snippet.topLevelComment} />
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+function CommentItem({ comment }) {
+  const formattedText = decode(comment.snippet.textDisplay).replaceAll(
+    '<br>',
+    '\n'
+  );
+  const [text, setText] = useState(truncate(formattedText, 200));
+  const [isTextMore, setIsTextMore] = useState(false);
+
+  const handleClickShowMoreLess = () => {
+    if (isTextMore) {
+      setText(truncate(formattedText, 200));
+      setIsTextMore(false);
+    } else {
+      setText(formattedText);
+      setIsTextMore(true);
+    }
+  };
+
+  return (
+    <li className="flex mb-6 gap-4">
+      <div className="min-w-[3rem] pt-1">
+        <img
+          src={comment.snippet.authorProfileImageUrl}
+          alt={`${comment.snippet.authorDisplayName} profile`}
+          className="rounded-full"
+        />
+      </div>
+      <div>
+        <div>
+          <span className="text-sm font-semibold inline-block mr-1">
+            {comment.snippet.authorDisplayName}
+          </span>
+          <span className="text-xs text-gray-500">
+            {formatDate(comment.snippet.publishedAt)}
+          </span>
+        </div>
+        <p className="leading-5 whitespace-pre-line text-sm">{text}</p>
+        {formattedText.length > 200 && (
+          <button
+            className="text-sm text-gray-500 cursor-pointer hover:underline mt-1"
+            onClick={handleClickShowMoreLess}
+          >
+            {!isTextMore ? '자세히 보기' : '간략히'}
+          </button>
+        )}
+      </div>
+    </li>
   );
 }
