@@ -4,8 +4,8 @@ import SearchInput from 'components/SearchInput';
 
 export default function Root() {
   return (
-    <div className="container m-auto">
-      <header className="flex justify-center items-center gap-3 py-4">
+    <div className="container m-auto pt-2 md:pt-4">
+      <header className="flex flex-col md:flex-row justify-center items-center gap-3 p-4">
         <div className="flex items-center">
           <PlayCircleIcon className="inline-block w-10 text-rose-400" />
           <Link

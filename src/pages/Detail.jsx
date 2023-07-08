@@ -65,7 +65,7 @@ export default function Detail() {
   return (
     <div className="flex gap-6 flex-col lg:flex-row break-all">
       <div>
-        <div className="w-full h-50">
+        <div className="w-full">
           <YouTube
             videoId={videoId}
             opts={{
@@ -73,7 +73,7 @@ export default function Detail() {
                 origin: 'http://localhost:3000',
               },
             }}
-            iframeClassName="w-full min-h-[20rem] lg:h-[32vw] lg:max-h-[45rem]"
+            iframeClassName="w-full h-[50vw] lg:h-[36vw] max-h-[44rem]"
           />
         </div>
         <div>
@@ -145,10 +145,10 @@ export default function Detail() {
                     />
                     <div>
                       <div className="text-[0.95rem] font-medium mb-1 leading-5">
-                        <h3 className="hidden lg:block">
+                        <h3 className="md:hidden lg:block">
                           {truncate(snippet.title, 50)}
                         </h3>
-                        <h3 className="lg:hidden">
+                        <h3 className="hidden md:block lg:hidden">
                           {truncate(snippet.title, 100)}
                         </h3>
                       </div>
