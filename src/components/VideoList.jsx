@@ -5,7 +5,7 @@ export default function VideoList({ videos }) {
   return (
     <ul className="flex flex-wrap gap-3 justify-center">
       {videos.map((video) => {
-        return <VideoItem video={video} />;
+        return <VideoItem key={video.id} video={video} />;
       })}
     </ul>
   );
@@ -15,7 +15,7 @@ function VideoItem({ video }) {
   const { id, snippet } = video;
   const videoId = id.videoId ? id.videoId : id;
   return (
-    <li key={videoId} className={`max-w-[320px] min-w-[200px] pb-2`}>
+    <li className={`max-w-[320px] min-w-[200px] pb-2`}>
       <Link to={`/watch/${videoId}`} state={{ video }}>
         <img
           src={snippet.thumbnails.medium.url}
