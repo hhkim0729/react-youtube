@@ -5,9 +5,10 @@ export default function Error() {
   console.error(error);
   return (
     <div className="container flex flex-col items-center h-screen mt-52">
-      <h1 className="text-4xl font-medium mb-4">
+      <h1 className="text-4xl font-medium mb-8">Error!</h1>
+      <h2 className="text-3xl text-gray-500 font-medium mb-4">
         {error.status} {error.statusText}
-      </h1>
+      </h2>
       <p className="text-xl text-gray-500 mb-8">{error.data}</p>
       <Link
         to="/"
