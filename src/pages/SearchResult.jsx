@@ -21,9 +21,5 @@ export default function SearchResult() {
 
   const videos = data?.items ?? [];
 
-  return (
-    <section>
-      <VideoList videos={videos} />
-    </section>
-  );
+  return <VideoList videos={videos} />;
 }

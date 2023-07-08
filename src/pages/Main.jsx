@@ -10,9 +10,5 @@ export default function Main() {
 
   const videos = data?.items ?? [];
 
-  return (
-    <section className="py-4">
-      <VideoList videos={videos} />
-    </section>
-  );
+  return <VideoList videos={videos} />;
 }

@@ -63,7 +63,7 @@ export default function Detail() {
   };
 
   return (
-    <section className="flex gap-6 flex-col lg:flex-row break-all">
+    <div className="flex gap-6 flex-col lg:flex-row break-all">
       <div>
         <div className="w-full h-50">
           <YouTube
@@ -195,6 +195,6 @@ export default function Detail() {
           </ul>
         )}
       </div>
-    </section>
+    </div>
   );
 }
