@@ -26,6 +26,7 @@ export default function Root() {
             href="https://github.com/hhkim0729"
             target="_blank"
             rel="noreferrer"
+            className="hover:scale-110 transition-transform"
           >
             <img
               src={`${process.env.PUBLIC_URL}/github_logo.svg`}
