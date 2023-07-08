@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import Root from 'pages/Root';
+import Error from 'pages/Error';
 import Main from 'pages/Main';
 import SearchResult from 'pages/SearchResult';
 import Detail from 'pages/Detail';
@@ -9,6 +10,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <Root />,
+    errorElement: <Error />,
     children: [
       {
         index: true,
