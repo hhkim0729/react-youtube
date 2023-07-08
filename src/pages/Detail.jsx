@@ -73,7 +73,7 @@ export default function Detail() {
                 origin: 'http://localhost:3000',
               },
             }}
-            iframeClassName="w-full h-[50vw] lg:h-[36vw] max-h-[44rem]"
+            iframeClassName="w-full min-h-[20rem] md:min-h-[48vw] lg:min-h-[36vw] max-h-[44rem]"
           />
         </div>
         <div>
@@ -182,10 +182,7 @@ function CommentList({ comments }) {
 }
 
 function CommentItem({ comment }) {
-  const formattedText = decode(comment.snippet.textDisplay).replaceAll(
-    '<br>',
-    '\n'
-  );
+  const formattedText = decode(comment.snippet.textDisplay);
   const [text, setText] = useState(truncate(formattedText, 200));
   const [isTextMore, setIsTextMore] = useState(false);
 
@@ -217,7 +214,10 @@ function CommentItem({ comment }) {
             {formatDate(comment.snippet.publishedAt)}
           </span>
         </div>
-        <p className="leading-5 whitespace-pre-line text-sm">{text}</p>
+        <p
+          className="leading-5 whitespace-pre-line text-sm comment-text"
+          dangerouslySetInnerHTML={{ __html: text }}
+        ></p>
         {formattedText.length > 200 && (
           <button
             className="text-sm text-gray-500 cursor-pointer hover:underline mt-1"
