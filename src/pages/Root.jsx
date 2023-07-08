@@ -20,6 +20,21 @@ export default function Root() {
       <section className="p-4">
         <Outlet />
       </section>
+      <footer>
+        <div className="flex justify-center mb-10">
+          <a
+            href="https://github.com/hhkim0729"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={`${process.env.PUBLIC_URL}/github_logo.svg`}
+              className="w-10"
+              alt={`hhkim's github`}
+            />
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }
