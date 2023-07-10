@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
+import axios from 'axios';
 import { decode } from 'html-entities';
 import YouTube from 'react-youtube';
 import { formatDate, formatNumber, truncate } from 'utils';
@@ -22,9 +23,9 @@ export default function Detail() {
   const { data: channel } = useQuery({
     queryKey: ['channel', videoSnippet.channelId],
     queryFn: async () =>
-      fetch(`${API_URLS.CHANNEL}&id=${videoSnippet.channelId}`).then((res) =>
-        res.json()
-      ),
+      axios
+        .get(`${API_URLS.CHANNEL}&id=${videoSnippet.channelId}`)
+        .then((res) => res.data),
   });
   const [channelSnippet, channelStatistics] = [
     channel?.items[0].snippet,
@@ -34,17 +35,17 @@ export default function Detail() {
   const { data: comments } = useQuery({
     queryKey: ['comments', videoId],
     queryFn: async () =>
-      fetch(`${API_URLS.COMMENTS}&videoId=${videoId}`).then((res) =>
-        res.json()
-      ),
+      axios
+        .get(`${API_URLS.COMMENTS}&videoId=${videoId}`)
+        .then((res) => res.data),
   });
 
   const { data: relatedVideos } = useQuery({
     queryKey: ['relatedVideos', videoId],
     queryFn: async () =>
-      fetch(`${API_URLS.RELATED}&relatedToVideoId=${videoId}`).then((res) =>
-        res.json()
-      ),
+      axios
+        .get(`${API_URLS.RELATED}&relatedToVideoId=${videoId}`)
+        .then((res) => res.data),
   });
 
   const handleClickDescription = () => {

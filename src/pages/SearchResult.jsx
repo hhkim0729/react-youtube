@@ -1,5 +1,6 @@
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
+import axios from 'axios';
 import VideoList from 'components/VideoList';
 import { API_URLS } from 'consts';
 
@@ -12,14 +13,12 @@ export default function SearchResult() {
     navigate('/');
   }
 
-  const { data } = useQuery({
+  const { data: videos } = useQuery({
     queryKey: ['videos', query],
     queryFn: async () =>
-      fetch(`${API_URLS.SEARCH}&q=${query}`).then((res) => res.json()),
+      axios.get(`${API_URLS.SEARCH}&q=${query}`).then((res) => res.data.items),
     staleTime: 1000 * 60 * 5,
   });
 
-  const videos = data?.items ?? [];
-
-  return <VideoList videos={videos} />;
+  return <VideoList videos={videos ?? []} />;
 }
