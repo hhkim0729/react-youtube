@@ -1,11 +1,10 @@
 import { useRef, useState } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
-import axios from 'axios';
 import { decode } from 'html-entities';
 import YouTube from 'react-youtube';
+import { getChannel, getComments, getRelatedVideos } from 'api/youtube';
 import { formatDate, formatNumber, truncate } from 'utils';
-import { API_URLS } from 'consts';
 
 export default function Detail() {
   const { state } = useLocation();
@@ -22,10 +21,7 @@ export default function Detail() {
 
   const { data: channel } = useQuery({
     queryKey: ['channel', videoSnippet.channelId],
-    queryFn: async () =>
-      axios
-        .get(`${API_URLS.CHANNEL}&id=${videoSnippet.channelId}`)
-        .then((res) => res.data),
+    queryFn: () => getChannel(videoSnippet.channelId),
   });
   const [channelSnippet, channelStatistics] = [
     channel?.items[0].snippet,
@@ -34,18 +30,12 @@ export default function Detail() {
 
   const { data: comments } = useQuery({
     queryKey: ['comments', videoId],
-    queryFn: async () =>
-      axios
-        .get(`${API_URLS.COMMENTS}&videoId=${videoId}`)
-        .then((res) => res.data),
+    queryFn: () => getComments(videoId),
   });
 
   const { data: relatedVideos } = useQuery({
     queryKey: ['relatedVideos', videoId],
-    queryFn: async () =>
-      axios
-        .get(`${API_URLS.RELATED}&relatedToVideoId=${videoId}`)
-        .then((res) => res.data),
+    queryFn: () => getRelatedVideos(videoId),
   });
 
   const handleClickDescription = () => {
