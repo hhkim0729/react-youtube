@@ -1,31 +1,41 @@
-import { useState } from 'react';
-import { useNavigate, createSearchParams } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import {
+  useNavigate,
+  createSearchParams,
+  useSearchParams,
+} from 'react-router-dom';
 import { MagnifyingGlassIcon } from '@heroicons/react/20/solid';
 
 export default function SearchInput() {
-  const [query, setQuery] = useState('');
+  const [searchParams] = useSearchParams();
+  const query = searchParams.get('query');
+  const [searchText, setSearchText] = useState('');
   const navigate = useNavigate();
+
+  useEffect(() => {
+    setSearchText(query ?? '');
+  }, [query]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!query.trim()) return;
+    if (!searchText.trim()) return;
 
     navigate({
       pathname: '/results',
-      search: `?${createSearchParams({ query })}`,
+      search: `?${createSearchParams({ query: searchText })}`,
     });
   };
 
   const handleChange = (e) => {
-    setQuery(e.target.value);
+    setSearchText(e.target.value);
   };
 
   return (
     <form onSubmit={handleSubmit} className="flex basis-6/12">
       <input
         type="text"
-        value={query}
+        value={searchText}
         onChange={handleChange}
         className="basis-10/12 border border-gray-300 border-r-0 rounded-l-3xl p-1 pl-5 text-lg text-gray-800"
         placeholder="검색"
