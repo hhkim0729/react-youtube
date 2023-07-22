@@ -71,11 +71,6 @@ export default function Detail() {
         <div className="w-full">
           <YouTube
             videoId={videoId}
-            opts={{
-              playerVars: {
-                origin: 'http://localhost:3000',
-              },
-            }}
             iframeClassName="w-full min-h-[20rem] md:min-h-[48vw] lg:min-h-[36vw] max-h-[44rem]"
           />
         </div>
