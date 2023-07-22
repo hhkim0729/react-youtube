@@ -11,6 +11,12 @@ export async function getPopularVideos() {
   return axios.get(API_URLS.POPULAR).then((res) => res.data.items);
 }
 
+export async function getVideo(videoId) {
+  return axios
+    .get(`${API_URLS.VIDEO}&id=${videoId}`)
+    .then((res) => res.data.items);
+}
+
 export async function getChannel(channelId) {
   return axios
     .get(`${API_URLS.CHANNEL}&id=${channelId}`)
