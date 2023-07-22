@@ -8,15 +8,15 @@ export default function CommentList({ comments }) {
       <h2 className="my-4">댓글 {comments.length}개</h2>
       <ul>
         {comments.map(({ id, snippet }) => (
-          <CommentItem key={id} comment={snippet.topLevelComment} />
+          <CommentItem key={id} snippet={snippet.topLevelComment.snippet} />
         ))}
       </ul>
     </div>
   );
 }
 
-function CommentItem({ comment }) {
-  const formattedText = decode(comment.snippet.textDisplay);
+function CommentItem({ snippet }) {
+  const formattedText = decode(snippet.textDisplay);
   const textRef = useRef(null);
   const [isTextMore, setIsTextMore] = useState(false);
   const [isHidden, setIsHidden] = useState(true);
@@ -42,18 +42,18 @@ function CommentItem({ comment }) {
     <li className="flex mb-6 gap-4">
       <div className="min-w-[3rem] pt-1">
         <img
-          src={comment.snippet.authorProfileImageUrl}
-          alt={`${comment.snippet.authorDisplayName} profile`}
+          src={snippet.authorProfileImageUrl}
+          alt={`${snippet.authorDisplayName} profile`}
           className="rounded-full"
         />
       </div>
       <div>
         <div>
           <span className="text-sm font-semibold inline-block mr-1">
-            {comment.snippet.authorDisplayName}
+            {snippet.authorDisplayName}
           </span>
           <span className="text-xs text-gray-500">
-            {formatDate(comment.snippet.publishedAt)}
+            {formatDate(snippet.publishedAt)}
           </span>
         </div>
         <p

@@ -5,16 +5,15 @@ export default function VideoList({ videos }) {
   return (
     <ul className="flex flex-wrap gap-3 justify-center">
       {videos.map((video) => {
-        const videoId = video.id.videoId ? video.id.videoId : video.id;
-        return <VideoItem key={videoId} video={video} />;
+        const { id, snippet } = video;
+        const videoId = id.videoId ? id.videoId : id;
+        return <VideoItem key={videoId} videoId={videoId} snippet={snippet} />;
       })}
     </ul>
   );
 }
 
-function VideoItem({ video }) {
-  const { id, snippet } = video;
-  const videoId = id.videoId ? id.videoId : id;
+function VideoItem({ videoId, snippet }) {
   return (
     <li className={`w-80 pb-2`}>
       <Link
