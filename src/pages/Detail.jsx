@@ -1,32 +1,46 @@
-import { useRef, useState } from 'react';
+import { useLayoutEffect, useRef, useState } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { decode } from 'html-entities';
 import YouTube from 'react-youtube';
-import { getChannel, getComments, getRelatedVideos } from 'api/youtube';
-import { formatDate, formatNumber, truncate } from 'utils';
+import {
+  getChannel,
+  getComments,
+  getRelatedVideos,
+  getVideo,
+} from 'api/youtube';
+import { formatDate, formatNumber } from 'utils';
 
 export default function Detail() {
   const { state } = useLocation();
-  const video = state.video;
-  const [videoId, videoSnippet] = [
-    video.id.videoId ? video.id.videoId : video.id,
-    video.snippet,
-  ];
-  const [description, setDescription] = useState(
-    truncate(videoSnippet.description, 30)
-  );
-  const [isDescriptionMore, setIsDescriptionMore] = useState(false);
-  const titleRef = useRef(null);
+  const { videoId, channelId } = state;
 
-  const { data: channel } = useQuery({
-    queryKey: ['channel', videoSnippet.channelId],
-    queryFn: () => getChannel(videoSnippet.channelId),
+  const { data: videoData } = useQuery({
+    queryKey: ['video', videoId],
+    queryFn: () => getVideo(videoId),
   });
-  const [channelSnippet, channelStatistics] = [
-    channel?.items[0].snippet,
-    channel?.items[0].statistics,
-  ];
+  const videoSnippet = videoData ? videoData[0].snippet : null;
+
+  const titleRef = useRef(null);
+  const descriptionRef = useRef(null);
+  const description = videoSnippet?.description;
+  const [isDescriptionMore, setIsDescriptionMore] = useState(false);
+  const [isHidden, setIsHidden] = useState(true);
+
+  useLayoutEffect(() => {
+    if (
+      descriptionRef.current &&
+      descriptionRef.current.clientHeight < descriptionRef.current.scrollHeight
+    ) {
+      setIsDescriptionMore(true);
+    }
+  }, [descriptionRef, videoSnippet?.description]);
+
+  const { data: channelData } = useQuery({
+    queryKey: ['channel', channelId],
+    queryFn: () => getChannel(channelId),
+  });
+  const channel = channelData?.items ? channelData.items[0] : null;
 
   const { data: comments } = useQuery({
     queryKey: ['comments', videoId],
@@ -39,17 +53,15 @@ export default function Detail() {
   });
 
   const handleClickDescription = () => {
-    if (isDescriptionMore) {
-      setDescription(truncate(videoSnippet.description, 30));
-      setIsDescriptionMore(false);
+    if (isHidden) {
+      setIsHidden(false);
+    } else {
+      setIsHidden(true);
       const titleRect = titleRef.current.getBoundingClientRect();
       if (titleRect.top > 0) return;
       titleRef.current.scrollIntoView({
         behavior: 'smooth',
       });
-    } else {
-      setDescription(videoSnippet.description);
-      setIsDescriptionMore(true);
     }
   };
 
@@ -74,16 +86,16 @@ export default function Detail() {
           {channel && (
             <div className="flex items-center gap-2">
               <img
-                src={channelSnippet.thumbnails.default.url}
-                alt={`${channelSnippet.title} thumbnail`}
+                src={channel.snippet.thumbnails.default.url}
+                alt={`${channel.snippet.title} thumbnail`}
                 className="w-12 h-12 rounded-full"
               />
               <div>
                 <h2 className="text-lg font-medium leading-3">
-                  {channelSnippet.title}
+                  {channel.snippet.title}
                 </h2>
                 <span className="text-xs text-gray-500">
-                  구독자 {formatNumber(channelStatistics.subscriberCount)}명
+                  구독자 {formatNumber(channel.statistics.subscriberCount)}명
                 </span>
               </div>
             </div>
@@ -91,27 +103,36 @@ export default function Detail() {
           <div
             className={`bg-stone-100 rounded-md my-3 px-3 py-4 ${
               isDescriptionMore
-                ? 'h-fit'
-                : 'h-22 overflow-hidden hover:bg-stone-300 cursor-pointer'
+                ? 'h-22 hover:bg-stone-300 cursor-pointer'
+                : 'h-fit'
             }`}
-            onClick={!isDescriptionMore ? handleClickDescription : () => {}}
+            onClick={isDescriptionMore ? handleClickDescription : () => {}}
           >
             <span className="text-sm font-medium block mb-4">
-              {formatDate(videoSnippet.publishedAt)}
+              {formatDate(videoSnippet?.publishedAt)}
             </span>
-            <p className="whitespace-pre-line">
-              {description}
-              {isDescriptionMore ? (
-                <button
-                  className="block mt-5 bg-transparent text-sm font-medium"
-                  onClick={handleClickDescription}
+            <div className="text-sm">
+              <p
+                className={`whitespace-pre-line ${
+                  isHidden ? 'line-clamp-1' : ''
+                }`}
+                ref={descriptionRef}
+              >
+                {description}
+              </p>
+              {isDescriptionMore && (
+                <p
+                  className={`${
+                    isHidden
+                      ? 'pl-2 font-medium'
+                      : 'mt-5 bg-transparent font-medium'
+                  }`}
+                  onClick={isHidden ? () => {} : handleClickDescription}
                 >
-                  간략히
-                </button>
-              ) : (
-                <span className="pl-2 text-sm font-medium">더보기</span>
+                  {isHidden ? '더보기' : '간략히'}
+                </p>
               )}
-            </p>
+            </div>
           </div>
         </div>
         {comments?.items && <CommentList comments={comments.items} />}
@@ -136,11 +157,8 @@ export default function Detail() {
                     />
                     <div>
                       <div className="text-[0.95rem] font-medium mb-1 leading-5">
-                        <h3 className="md:hidden lg:block">
-                          {truncate(snippet.title, 50)}
-                        </h3>
-                        <h3 className="hidden md:block lg:hidden">
-                          {truncate(snippet.title, 100)}
+                        <h3 className="md:line-clamp-2 lg:line-clamp-3">
+                          {snippet.title}
                         </h3>
                       </div>
                       <div className="flex flex-col text-xs text-gray-500">
@@ -174,16 +192,24 @@ function CommentList({ comments }) {
 
 function CommentItem({ comment }) {
   const formattedText = decode(comment.snippet.textDisplay);
-  const [text, setText] = useState(truncate(formattedText, 200));
+  const textRef = useRef(null);
   const [isTextMore, setIsTextMore] = useState(false);
+  const [isHidden, setIsHidden] = useState(true);
+
+  useLayoutEffect(() => {
+    if (
+      textRef.current &&
+      textRef.current.clientHeight < textRef.current.scrollHeight
+    ) {
+      setIsTextMore(true);
+    }
+  }, [textRef]);
 
   const handleClickShowMoreLess = () => {
-    if (isTextMore) {
-      setText(truncate(formattedText, 200));
-      setIsTextMore(false);
+    if (isHidden) {
+      setIsHidden(false);
     } else {
-      setText(formattedText);
-      setIsTextMore(true);
+      setIsHidden(true);
     }
   };
 
@@ -206,15 +232,18 @@ function CommentItem({ comment }) {
           </span>
         </div>
         <p
-          className="leading-5 whitespace-pre-line text-sm comment-text"
-          dangerouslySetInnerHTML={{ __html: text }}
+          className={`leading-5 whitespace-pre-line text-sm comment-text ${
+            isHidden ? 'line-clamp-3' : ''
+          }`}
+          ref={textRef}
+          dangerouslySetInnerHTML={{ __html: formattedText }}
         ></p>
-        {formattedText.length > 200 && (
+        {isTextMore && (
           <button
             className="text-sm text-gray-500 cursor-pointer hover:underline mt-1"
             onClick={handleClickShowMoreLess}
           >
-            {!isTextMore ? '자세히 보기' : '간략히'}
+            {isHidden ? '자세히 보기' : '간략히'}
           </button>
         )}
       </div>
