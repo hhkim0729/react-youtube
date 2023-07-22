@@ -9,6 +9,7 @@ import {
   getVideo,
 } from 'api/youtube';
 import CommentList from 'components/CommentList';
+import RelatedVideoList from 'components/RelatedVideoList';
 import { formatDate, formatNumber } from 'utils';
 
 export default function Detail() {
@@ -133,39 +134,8 @@ export default function Detail() {
         {comments?.items && <CommentList comments={comments.items} />}
       </div>
       <div className="lg:min-w-[24rem] lg:max-w-[24rem]">
-        {relatedVideos && (
-          <ul>
-            {relatedVideos.items.map((video) => {
-              const { id, snippet } = video;
-              const videoId = id.videoId;
-              return (
-                <li key={videoId} className="mb-2">
-                  <Link
-                    to={`/watch/${videoId}`}
-                    state={{ video }}
-                    className="flex gap-2"
-                  >
-                    <img
-                      src={snippet.thumbnails.medium.url}
-                      alt={`${snippet.title} thumbnail`}
-                      className="w-44 rounded-lg"
-                    />
-                    <div>
-                      <div className="text-[0.95rem] font-medium mb-1 leading-5">
-                        <h3 className="md:line-clamp-2 lg:line-clamp-3">
-                          {snippet.title}
-                        </h3>
-                      </div>
-                      <div className="flex flex-col text-xs text-gray-500">
-                        <span>{snippet.channelTitle}</span>
-                        <span>{formatDate(snippet.publishTime)}</span>
-                      </div>
-                    </div>
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
+        {relatedVideos?.items && (
+          <RelatedVideoList videos={relatedVideos.items} />
         )}
       </div>
     </div>

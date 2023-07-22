@@ -19,7 +19,7 @@ function VideoItem({ video }) {
     <li className={`w-80 pb-2`}>
       <Link
         to={`/watch/${videoId}`}
-        state={{ videoId, channelId: video.snippet.channelId }}
+        state={{ videoId, channelId: snippet.channelId }}
       >
         <img
           src={snippet.thumbnails.medium.url}
@@ -30,7 +30,7 @@ function VideoItem({ video }) {
       <div className="p-2">
         <Link
           to={`/watch/${videoId}`}
-          state={{ videoId, channelId: video.snippet.channelId }}
+          state={{ videoId, channelId: snippet.channelId }}
         >
           <h3 className="break-all text-lg font-medium leading-6 line-clamp-2">
             {snippet.title}
