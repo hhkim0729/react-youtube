@@ -21,7 +21,7 @@ export default function Root() {
         <Outlet />
       </section>
       <footer>
-        <div className="flex justify-center mb-10">
+        <div className="flex justify-center mt-4 lg:mt-0 mb-10">
           <a
             href="https://github.com/hhkim0729"
             target="_blank"
