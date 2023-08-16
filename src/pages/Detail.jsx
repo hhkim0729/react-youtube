@@ -35,8 +35,8 @@ export default function Detail() {
   });
 
   const { data: relatedVideos } = useQuery({
-    queryKey: ['relatedVideos', videoId],
-    queryFn: () => getRelatedVideos(videoId),
+    queryKey: ['relatedVideos', channelId],
+    queryFn: () => getRelatedVideos(channelId),
   });
 
   return (

@@ -29,8 +29,8 @@ export async function getComments(videoId) {
     .then((res) => res.data);
 }
 
-export async function getRelatedVideos(videoId) {
+export async function getRelatedVideos(channelId) {
   return axios
-    .get(`${API_URLS.RELATED}&relatedToVideoId=${videoId}`)
+    .get(`${API_URLS.RELATED}&channelId=${channelId}`)
     .then((res) => res.data);
 }
